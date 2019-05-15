@@ -1,0 +1,62 @@
+.main-container{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #F3F3F3;
+  }
+  .sub-container{
+    margin-top: 93px;
+    margin-left:160px;
+    width:960px;
+    height:600px;
+  }
+  .flex-container{
+    height: 100%;
+  }
+  .left-panel{
+    background-image: linear-gradient(to bottom right,#F2F2F2,#95A1FF)
+  }
+  .right-panel{
+    background-color: #fff;
+    position: relative;
+  }
+  .header{
+    color:#2196F3;
+    font-size: 48px;
+    font-family: 'Lato-bold';
+    text-align: center;
+    padding-top:30px;
+}
+.left-image-container{
+    width:460px;
+    height: 335px;
+    margin-top: 16px;
+    margin-bottom: 9px;
+    margin-left:10px;
+    position: relative;
+}
+.content{
+    color:#0069C0;
+    font-family: 'Lato-Regular';
+    font-size: 24px;
+    text-align: left;
+}
+.content-container{
+    padding-top: 22px;
+    padding-left:33px;
+    width:425px;
+    height: 150px;
+}
+.otp-logo{
+    position: absolute;
+    top:203px;
+    left: 275px;
+    
+}
+.right-image-container{
+    position: absolute;
+    top:552px;
+    left:349px;
+}
