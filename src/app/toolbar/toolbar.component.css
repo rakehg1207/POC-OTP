@@ -8,3 +8,23 @@
   .header{
       text-align: center;
   }
+
+  .main-container{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #0A79DF;
+  }
+  .sub-container{
+    height : 100px;
+    width:100px;
+    background-color: red;
+  
+  }
+  .flex-container{
+      height: 100%;
+  }
+ 
+  
