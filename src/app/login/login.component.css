@@ -23,7 +23,6 @@
   .header{
     color:#2196F3;
     font-size: 48px;
-    font-family: 'Lato-bold';
     text-align: center;
     padding-top:30px;
 }
@@ -37,7 +36,6 @@
 }
 .content{
     color:#0069C0;
-    font-family: 'Lato-Regular';
     font-size: 24px;
     text-align: left;
 }
