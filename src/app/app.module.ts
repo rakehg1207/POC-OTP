@@ -5,7 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ToolbarComponent } from './toolbar/toolbar.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
-import { MatToolbarModule,MatCardModule,MatButtonModule, MatIconModule,MatInputModule} from '@angular/material';
+import { MatToolbarModule,MatCardModule,MatButtonModule, MatIconModule,MatInputModule,MatCheckboxModule} from '@angular/material';
 import { HomePageComponent } from './home-page/home-page.component';
 import { LoginComponent } from './login/login.component';
 import { HttpClientModule } from '@angular/common/http'; 
@@ -29,6 +29,7 @@ import { HttpModule } from '@angular/http';
     MatInputModule,
     HttpClientModule,
     HttpModule,
+    MatCheckboxModule
   ],
   providers: [],
   bootstrap: [AppComponent]
