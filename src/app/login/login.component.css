@@ -56,3 +56,29 @@
     top:552px;
     left:349px;
 }
+.usr-content{
+    margin-top:92px;
+    margin-left:36px;
+    width:402px;
+    height: 82px;
+  }
+  .input-container{
+    width:402px;
+    height: 33px;
+  }
+  .pwd-content{
+    margin-left:36px;
+    width:402px;
+    height: 82px;
+  }
+  .btn-content{
+    margin-left:151px;
+    width:174px;
+    height: 44px;
+    border-radius: 22px;
+    background-color:#2196F3;
+    color : #fff;
+  }
+  .btn-container{
+    margin-bottom: 97px;
+  }

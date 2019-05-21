@@ -1,7 +1,7 @@
 <link rel="stylesheet" href="/bower_components/lato-font/css/lato-font.css">
 <div class="main-container">
-  <div class="flex-container" fxLayout="rows"  fxLayoutAlign="center center">
-    <div class="sub-container" >
+  <div class="flex-container" fxLayout="rows" fxLayoutAlign="center center">
+    <div class="sub-container">
       <div class="left-panel" fxFlex="50%">
 
         <p class="header">Welcome Back !</p>
@@ -18,9 +18,24 @@
         </div>
       </div>
       <div class="right-panel" fxFlex>
-        <p color="black">Right Panel</p>
+        <p class="header">Sign in</p>
+        <div class="usr-content">
+          <mat-form-field class="input-container">
+            <img matPrefix src="assets/img/username.svg">
+            <input matInput placeholder="Username">
+          </mat-form-field>
+        </div>
+        <div class="pwd-content">
+          <mat-form-field class="input-container">
+            <img matPrefix src="assets/img/password.svg">
+            <input matInput placeholder="Password">
+          </mat-form-field>
+        </div>
+        <div class="btn-container">
+          <button class="btn-content" mat-button >LOGIN</button>
+        </div>
         <div class="right-image-container">
-            <img src="assets/img/mphasis_logo.png">
+          <img src="assets/img/mphasis_logo.png">
         </div>
       </div>
     </div>
