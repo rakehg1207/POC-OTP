@@ -4,12 +4,10 @@
     <div class="sub-container">
       <div class="left-panel" fxFlex="50%">
 
-        <p class="header">Welcome Back !</p>
+        <p class="header">{{_configuration.login_welcome}}</p>
         <div class="content-container">
           <p class="content">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore
-            magna aliqua.
+            {{_configuration.loginMessage}}
           </p>
         </div>
         <div class="left-image-container">
@@ -18,26 +16,37 @@
         </div>
       </div>
       <div class="right-panel" fxFlex>
-        <p class="header">Sign in</p>
-        <div class="usr-content">
-          <mat-form-field class="input-container">
-            <img matPrefix src="assets/img/username.svg">
-            <input matInput placeholder="Username">
-          </mat-form-field>
-        </div>
-        <div class="pwd-content">
-          <mat-form-field class="input-container">
-            <img matPrefix src="assets/img/password.svg">
-            <input matInput placeholder="Password">
-          </mat-form-field>
-        </div>
-        <div fxLayout="row" fxLayoutAlign="space-around center">
-          <mat-checkbox  color ="primary" style="color:rgba(0, 0, 0, 0.54);font-family:Lato, Medium">Remember me</mat-checkbox>
-          <p style="color:#2196F3;font-family:Lato, Medium;font-style: italic">Forgot Password?</p>
-        </div>
-        <div class="btn-container">
-          <button class="btn-content" mat-button>LOGIN</button>
-        </div>
+        <p class="header">{{_configuration.sign_in}}</p>
+        <form (ngSubmit)="onSubmit(f)" #f="ngForm">
+          <div *ngIf="!f.valid">
+              <p class="alert-msg">{{_configuration.alert_msg}}</p>
+          </div>
+          <div class="usr-content">
+            <mat-form-field class="input-container">
+              <img matPrefix src="assets/img/username.svg">
+              <input matInput type="text" id="username" class="form-control" ngModel name="username" placeholder="Username" required>
+              <mat-hint>Enter your username</mat-hint>
+            </mat-form-field>
+          </div>
+          <div class="pwd-content">
+            <mat-form-field class="input-container">
+              <img matPrefix src="assets/img/password.svg">
+              <input matInput type="password" id="password" class="form-control" ngModel name="password" placeholder="Password" required>
+            </mat-form-field>
+            <!-- <mat-form-field  class="input-container">
+                <mat-icon matPrefix>icon_lock</mat-icon>
+                <input matInput type="password" id="password" class="form-control" ngModel name="password" placeholder="Password" required>
+                <mat-hint>Password</mat-hint>
+              </mat-form-field> -->
+          </div>
+          <div fxLayout="row" fxLayoutAlign="space-around center">
+            <mat-checkbox color="primary" style="color:rgba(0, 0, 0, 0.54);font-family:Lato, Medium">{{_configuration.remember_me}}</mat-checkbox>
+            <p style="color:#2196F3;font-family:Lato, Medium;font-style: italic">{{_configuration.forgot}}</p>
+          </div>
+          <div class="btn-container">
+            <button class="btn-content" [disabled]="!f.valid" routerLink="/home" mat-button>{{_configuration.login}}</button>
+          </div>
+        </form>
         <div class="right-image-container">
           <img src="assets/img/mphasis_logo.png">
         </div>

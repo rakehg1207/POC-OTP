@@ -25,6 +25,8 @@
     font-size: 48px;
     text-align: center;
     padding-top:30px;
+    font-family: Lato, bold;
+
 }
 .left-image-container{
     width:460px;
@@ -57,7 +59,7 @@
     left:349px;
 }
 .usr-content{
-    margin-top:92px;
+    margin-top:20px;
     margin-left:36px;
     width:402px;
     height: 82px;
@@ -81,4 +83,11 @@
   }
   .btn-container{
     margin-top: 54px;
+  }
+  .alert-msg{
+      color:rgba(185, 45, 0, 0.87);
+      font-family: Lato, Medium;
+      padding-left: 32px;
+      padding-top:22px;
+      font-size: 20px;
   }
