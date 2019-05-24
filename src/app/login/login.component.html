@@ -1,9 +1,8 @@
 <link rel="stylesheet" href="/bower_components/lato-font/css/lato-font.css">
 <div class="main-container">
-  <div class="flex-container" fxLayout="rows" fxLayoutAlign="center center">
-    <div class="sub-container">
-      <div class="left-panel" fxFlex="50%">
-
+  <div class="flex-container" fxLayout="rows wrap" fxLayoutAlign="center center">
+    <div class="sub-container" fxLayout="rows wrap">
+      <div class="left-panel" fxFlex>
         <p class="header">{{_configuration.login_welcome}}</p>
         <div class="content-container">
           <p class="content">
@@ -15,7 +14,7 @@
           <img class="otp-logo" src="assets/img/otp_logo.svg">
         </div>
       </div>
-      <div class="right-panel" fxFlex>
+      <div class="right-panel" fxFlex fxLayout="column" fxLayoutAlign="space-between center">
         <p class="header">{{_configuration.sign_in}}</p>
         <form (ngSubmit)="onSubmit(f)" #f="ngForm">
           <div *ngIf="!f.valid">
@@ -47,7 +46,7 @@
             <button class="btn-content" [disabled]="!f.valid" routerLink="/home" mat-button>{{_configuration.login}}</button>
           </div>
         </form>
-        <div class="right-image-container">
+        <div class="right-image-container" fxLayout="row" fxLayoutAlign="end end">
           <img src="assets/img/mphasis_logo.png">
         </div>
       </div>
