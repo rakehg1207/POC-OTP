@@ -17,10 +17,36 @@
     max-width: 960px;
     margin: 0 auto;
   }
-  
+  .flight-container{
+    position: relative;
+    width:1004px;
+    height: 312px;
+    margin-left: 138px;
+    margin-top:30px;
+    background-color: rgba(229, 229, 229, 1);
+  }
+  .airport-container-left{
+    position: relative;
+    width:580px;
+    height: 295px;
+    margin-left: 138px;
+    margin-top:15px;
+    margin-bottom: 15px;
+    background-color: rgba(229, 229, 229, 1);
+  }
+  .airport-container-right{
+    position: relative;
+    width:410px;
+    height: 295px;
+    margin-left: 15px;
+    margin-top:15px;
+    margin-bottom: 15px;
+    background-color: rgba(229, 229, 229, 1);
+}
+
   .header{
     padding: 0 20px;
-    background-color: #0A79DF;
+    background-color: rgba(33, 150, 243, 1);
     height: 72px;
   }
   
@@ -30,8 +56,14 @@
   }
   
   .footer{
-    background-color: #2C3335;
+    background-color: #EBEBEB;
     height: 72px;
+  }
+  .footer-text{
+      /* margin-top: 10px; */
+     font-family: Lato, Medium;
+     font-size: 14px;
+     color :rgba(0, 0, 0, 0.6)
   }
   
   .body-content{
@@ -92,6 +124,16 @@
     border: 1px solid #d6e0e2;
     position: relative;
   }
+  .footer{
+    color: rgba(235, 235, 235, 1);
+    opacity:100%;
+    /* padding-left: 20px; */
+    font-size: 20px;
+    font-weight: 700; 
+  }
   
   
-  
+  .input-container{
+    width:324px;
+    height: 44px;
+  }
