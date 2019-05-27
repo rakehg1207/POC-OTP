@@ -2,53 +2,48 @@
   <div class="flex-container" fxLayout="column">
 
     <div class="header" fxFlex="72px">
-      <div fxFlex="138px" fxFlex.xs="10px"></div>
-      <div fxFlex class="flex-container" fxLayout="rows" fxLayoutAlign="space-around center">
-        <div>
+      <!-- <div fxFlex="138px" fxFlex.xs="10px"></div> -->
+      <div class="flex-container" fxLayout="row" fxLayoutAlign="space-between center">
+        <div fxFlex>
           <img src="assets/img/homePage/otp_logo.svg">
         </div>
-        <div>
+        <div fxFlex>
+          <mat-tab-group>
+            <mat-tab label="DASHBOARD"></mat-tab>
+            <mat-tab label="FLIGHTS"></mat-tab>
+            <mat-tab label="DEPARTMENT"></mat-tab>
+            <mat-tab label="DATA"></mat-tab>
+          </mat-tab-group>
+        </div>
+        <div fxFlex>
           <mat-form-field appearance="outline">
             <img matSuffix src="assets/img/homePage/baseline-search-24px.svg">
             <input matInput type="text" id="username" class="form-control" ngModel name="username" placeholder="Search Flight"
               required>
           </mat-form-field>
         </div>
-        <div>
+        <div fxFlex>
           <mat-icon>icon_person</mat-icon>
           <p fxFlex>Maria</p>
           <img src="assets/img/homePage/baseline-keyboard_arrow_down-24px.svg">
         </div>
       </div>
-      <div fxFlex="138px"></div>
+      <!-- <div fxFlex="138px"></div> -->
     </div>
     <div class="body-content" fxFlex>
-        <div class="flight-container"></div>
-        <div fxLayout="rows">
-            <div class="airport-container-left"></div>
-            <div class="airport-container-right"></div>
+      <div class="flex-container" fxLayout="column" fxLayoutAlign=" center">
+        <div fxFlex="312px" class="flight-container"></div>
+        <!-- <div fxFlex="312px" class="flight-container"></div> -->
+        <div fxFlex>
+          <div class="flex-container" fxLayout="rows wrap" fxLayoutAlign="center none" >
+            <div fxFlex="580px" class="airport-container-left"></div>
+            <div fxFlex="410px" class="airport-container-right"></div>
+          </div>
         </div>
-    </div>
-    <div class="footer" fxFlex="72px">
-      <div class="flex-container" fxLayout="rows" fxLayoutAlign="space-between center">
-        <div fxFlex="138px"> </div>
-        <div fxFlex fxLayout="rows" fxLayoutAlign="space-between center">
-          <p class="footer-text">Copyright 2019 © All Rights Reserved.</p>
-          <img src="assets/img/mphasis_logo.png">
-        </div>
-        <div fxFlex="138px"></div>
       </div>
     </div>
-  </div>
-  <!-- <div>
-    <app-toolbar></app-toolbar>
-  </div>
-  <div style="overflow:scroll;height:-webkit-fill-available">
-    <div *ngFor="let hero of heroes" >
-      <button class="btn btn-primary">Save</button>
+    <div class="footer" fxFlex="72px">
+      <app-footer></app-footer>
     </div>
   </div>
-  <div style="position: absolute;bottom:0;width:-webkit-fill-available">
-    <app-toolbar></app-toolbar>
-  </div> -->
 </div>

@@ -16,8 +16,8 @@
       </div>
       <div class="right-panel" fxFlex fxLayout="column" fxLayoutAlign="space-between center">
         <p class="header">{{_configuration.sign_in}}</p>
-        <form (ngSubmit)="onSubmit(f)" #f="ngForm">
-          <div *ngIf="!f.valid">
+        <form (ngSubmit)="onSubmit()" #f="ngForm">
+          <div *ngIf="isValid">
               <p class="alert-msg">{{_configuration.alert_msg}}</p>
           </div>
           <div class="usr-content">
@@ -43,7 +43,7 @@
             <p style="color:#2196F3;font-family:Lato, Medium;font-style: italic">{{_configuration.forgot}}</p>
           </div>
           <div class="btn-container">
-            <button class="btn-content" [disabled]="!f.valid" routerLink="/home" mat-button>{{_configuration.login}}</button>
+            <button class="btn-content" [disabled]="!f.valid" routerLink="/home" (click)="onSubmit()" mat-button>{{_configuration.login}}</button>
           </div>
         </form>
         <div class="right-image-container" fxLayout="row" fxLayoutAlign="end end">

@@ -20,27 +20,20 @@
   .flight-container{
     position: relative;
     width:1004px;
-    height: 312px;
-    margin-left: 138px;
     margin-top:30px;
     background-color: rgba(229, 229, 229, 1);
   }
   .airport-container-left{
     position: relative;
-    width:580px;
-    height: 295px;
-    margin-left: 138px;
     margin-top:15px;
-    margin-bottom: 15px;
+    height : 295px;
     background-color: rgba(229, 229, 229, 1);
   }
   .airport-container-right{
     position: relative;
-    width:410px;
-    height: 295px;
-    margin-left: 15px;
+    height : 295px;
     margin-top:15px;
-    margin-bottom: 15px;
+    margin-left:15px;
     background-color: rgba(229, 229, 229, 1);
 }
 
