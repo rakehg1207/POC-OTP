@@ -32,12 +32,36 @@
     </div>
     <div class="body-content" fxFlex>
       <div class="flex-container" fxLayout="column" fxLayoutAlign=" center">
-        <div fxFlex="312px" class="flight-container"></div>
+        <mat-card fxFlex="312px" class="flight-container">
+          <div class="flex-container" fxLayout="rows wrap" fxLayoutAlign="space-between center" style="width:100%;height:48px;background-color:rgba(229, 229, 229, 1); ">
+            <mat-tab-group>
+              <mat-tab label="FLIGHTS"></mat-tab>
+              <mat-tab label="DEPARTMENTS"></mat-tab>
+            </mat-tab-group>
+            <div>
+              <img src="assets/img/homePage/baseline-refresh-24px.svg">
+              <img style="margin-left: 10px" src="assets/img/homePage/outline-settings-24px.svg">
+            </div>
+          </div>
+        </mat-card>
         <!-- <div fxFlex="312px" class="flight-container"></div> -->
         <div fxFlex>
-          <div class="flex-container" fxLayout="rows wrap" fxLayoutAlign="center none" >
-            <div fxFlex="580px" class="airport-container-left"></div>
-            <div fxFlex="410px" class="airport-container-right"></div>
+          <div class="flex-container" fxLayout="rows wrap" fxLayoutAlign="center none">
+            <mat-card fxFlex="580px" class="airport-container-left">
+              <div class="flex-container" fxLayout="rows wrap" fxLayoutAlign="space-between center" style="width:580px;height:48px;background-color:rgba(229, 229, 229, 1); ">
+                <p style="font-size:20px;font-family:Lato, Medium;margin-left: 15px">Airport Report</p>
+                <div>
+                  <img src="assets/img/homePage/baseline-refresh-24px.svg">
+                  <img style="margin-left: 10px" src="assets/img/homePage/outline-settings-24px.svg">
+                </div>
+              </div>
+              <canvas baseChart style="width:540px;height:240px" [datasets]="lineChartData" [labels]="lineChartLabels"
+                [options]="lineChartOptions" [colors]="lineChartColors" [chartType]="lineChartType" [plugins]="lineChartPlugins">
+              </canvas>
+            </mat-card>
+            <mat-card fxFlex="410px" class="airport-container-right">
+              <p style="font-size:20px;font-family:Lato, Medium;margin-left: 15px">Airport Report</p>
+            </mat-card>
           </div>
         </div>
       </div>

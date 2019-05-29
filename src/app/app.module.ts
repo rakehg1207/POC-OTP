@@ -13,7 +13,9 @@ import { HttpClientModule } from '@angular/common/http';
 import { HttpModule } from '@angular/http';
 import { FormsModule } from '@angular/forms';
 import { FooterComponent } from './footer/footer.component';
-import {MatTabsModule} from '@angular/material/tabs';
+import { MatTabsModule} from '@angular/material/tabs';
+import { ChartsModule } from 'ng2-charts';
+
 
 @NgModule({
   declarations: [
@@ -38,7 +40,8 @@ import {MatTabsModule} from '@angular/material/tabs';
     MatInputModule,
     HttpClientModule,
     HttpModule,
-    MatCheckboxModule
+    MatCheckboxModule,
+    ChartsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

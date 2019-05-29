@@ -21,20 +21,25 @@
     position: relative;
     width:1004px;
     margin-top:30px;
-    background-color: rgba(229, 229, 229, 1);
+    padding: unset;
+    background-color: #FFF;
   }
   .airport-container-left{
     position: relative;
     margin-top:15px;
+    margin-bottom:15px;
     height : 295px;
-    background-color: rgba(229, 229, 229, 1);
+    padding: unset;
+    background-color: #FFF;
   }
   .airport-container-right{
     position: relative;
     height : 295px;
     margin-top:15px;
+    margin-bottom:15px;
     margin-left:15px;
-    background-color: rgba(229, 229, 229, 1);
+    padding: unset;
+    background-color: #FFF;
 }
 
   .header{
