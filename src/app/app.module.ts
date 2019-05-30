@@ -14,6 +14,7 @@ import { HttpModule } from '@angular/http';
 import { FormsModule } from '@angular/forms';
 import { FooterComponent } from './footer/footer.component';
 import { ChartsModule } from 'ng2-charts';
+import { BodyComponent } from './body/body.component';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { ChartsModule } from 'ng2-charts';
     ToolbarComponent,
     HomePageComponent,
     LoginComponent,
-    FooterComponent
+    FooterComponent,
+    BodyComponent
   ],
   imports: [
     BrowserModule,
@@ -41,7 +43,7 @@ import { ChartsModule } from 'ng2-charts';
     HttpModule,
     MatCheckboxModule,
     MatTabsModule,
-    MatSelectModule
+    MatSelectModule,
     ChartsModule,
   ],
   providers: [],
