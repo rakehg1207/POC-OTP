@@ -6,7 +6,9 @@
     flex: 1 1 auto;
   }
   .header{
-      text-align: center;
+    /* padding: 0 20px; */
+    background-color: rgba(33, 150, 243, 1);
+    height: 100%;
   }
 
   .main-container{
@@ -23,8 +25,28 @@
     background-color: red;
   
   }
-  .flex-container{
-      height: 100%;
+  .hdr-content{
+    padding: 0 20px;
+    height: 100%;
   }
- 
-  
+  .hdr-content-small{
+    /* padding: 0 20px; */
+    height: 100%;
+  }
+  mat-ink-bar{
+    /* visibility: visible; left: 320px; width: 160px; */
+  }
+  .search{
+    margin:20px 15px;border:1px solid black;border-radius: 20px;height:39px;width:250px;
+  }
+  .ip{
+    background-color: transparent;
+    border:0px solid transparent;
+  }
+ deep/ .mat-form-field-underline {
+  width: 0px;
+}
+
+mat-tab-link{
+  min-width:unset;
+}

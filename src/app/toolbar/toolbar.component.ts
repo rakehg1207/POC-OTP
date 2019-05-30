@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ToolbarComponent implements OnInit {
 
+  public navLinks = ["Dashboard","Flights","Department","Data"]
   constructor() { }
 
   ngOnInit() {
