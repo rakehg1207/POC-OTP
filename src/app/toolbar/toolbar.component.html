@@ -1,15 +1,57 @@
-<!-- <mat-toolbar color="primary">
-  <mat-toolbar-row>
-    <label class="header">Third Line</label>
-    <span class="example-spacer"></span>
-    <!-- <mat-icon class="example-icon" aria-hidden="false" aria-label="Example heart icon">favorite</mat-icon>
-    <mat-icon class="example-icon" aria-hidden="false" aria-label="Example delete icon">delete</mat-icon> -->
-<!-- </mat-toolbar-row>
-</mat-toolbar> -->
+<div class="header" fxLayout="column">
+  <!-- <div fxFlex="138px" fxFlex.xs="10px"></div> -->
+  <div  class="hdr-content" fxLayout="row wrap" fxLayoutAlign="space-between center">
+    <div>
+      <img src="assets/img/homePage/otp_logo.svg">
+    </div>
+    <div fxHide.xs="true" fxHide.md="true" fxHide.sm="true" >
+          <nav mat-tab-nav-bar backgroundColor="rgb(48,150,243)" color="primary">
+              <a mat-tab-link *ngFor="let link of navLinks"
+                  (click)="activeLink = link"
+                [active]="activeLink == link"> {{link}} </a>
+              <!-- <mat-ink-bar style="visibility: visible; left: 320px; width: 160px;"></mat-ink-bar> -->
+            </nav>
+    </div> 
+    <div fxHide.xs="true" fxHide.md="true" fxHide.sm="true" class="search" fxLayout="row" fxLayoutAlign="space-around center">
+      <!-- <div> -->
+          <mat-form-field floatLabel="never">
+              <input matInput class="ip" field="label" placeholder="Placeholder">
+          </mat-form-field>
+          <mat-icon matSuffix>search</mat-icon>
 
-<div class="main-container">
-  <div class="flex-container" fxLayout="row" fxLayoutAlign="center center">
-      <div class="sub-container">
-      </div>
+      <!-- </div> -->
+     
+    </div>
+    <div fxLayout="row">
+            <mat-label>Maria</mat-label>
+            <mat-select>
+              <mat-option>
+                log out
+              </mat-option>
+            </mat-select>
+    </div>
   </div>
+  <div  class="hdr-content-small" fxLayout="row wrap" fxLayoutAlign="space-between center">
+     
+      <div fxHide.xs="false" fxHide.md="false" fxHide.sm="false"  fxHide="true" >
+            <nav mat-tab-nav-bar backgroundColor="rgb(48,150,243)" color="primary">
+                <a mat-tab-link style="min-width: unset !important;"*ngFor="let link of navLinks"
+                    (click)="activeLink = link"
+                  [active]="activeLink == link"> {{link}} </a>
+                <!-- <mat-ink-bar style="visibility: visible; left: 320px; width: 160px;"></mat-ink-bar> -->
+              </nav>
+      </div> 
+      <div fxHide.xs="false" fxHide.md="false" fxHide.sm="false"  fxHide="true" class="search" fxLayout="row" fxLayoutAlign="space-around center">
+        <!-- <div> -->
+            <mat-form-field floatLabel="never">
+                <input matInput class="ip" field="label" placeholder="Placeholder">
+            </mat-form-field>
+            <mat-icon matSuffix>search</mat-icon>
+  
+        <!-- </div> -->
+       
+      </div>
+     
+    </div>
+  <!-- <div fxFlex="138px"></div> -->
 </div>
