@@ -1,0 +1,10 @@
+.flex-container{
+    height: 100%;
+  }
+
+  .footer-text{
+    /* margin-top: 10px; */
+   font-family: Lato, Medium;
+   font-size: 14px;
+   color :rgba(0, 0, 0, 0.6)
+}

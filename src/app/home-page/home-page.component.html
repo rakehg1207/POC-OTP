@@ -2,19 +2,27 @@
   <div class="flex-container" fxLayout="column">
 
     <div class="header" fxFlex="72px">
-      <div fxFlex="138px" fxFlex.xs="10px"></div>
-      <div fxFlex class="flex-container" fxLayout="rows" fxLayoutAlign="space-around center">
-        <div>
+      <div fxFlex="138px" fxFlex.xs="10px"></div> 
+      <div class="flex-container" fxLayout="row" fxLayoutAlign="space-between center">
+        <div fxFlex>
           <img src="assets/img/homePage/otp_logo.svg">
         </div>
-        <div>
+        <div fxFlex>
+          <mat-tab-group>
+            <mat-tab label="DASHBOARD"></mat-tab>
+            <mat-tab label="FLIGHTS"></mat-tab>
+            <mat-tab label="DEPARTMENT"></mat-tab>
+            <mat-tab label="DATA"></mat-tab>
+          </mat-tab-group>
+        </div>
+        <div fxFlex>
           <mat-form-field appearance="outline">
             <img matSuffix src="assets/img/homePage/baseline-search-24px.svg">
             <input matInput type="text" id="username" class="form-control" ngModel name="username" placeholder="Search Flight"
               required>
           </mat-form-field>
         </div>
-        <div>
+        <div fxFlex>
           <mat-icon>icon_person</mat-icon>
           <p fxFlex>Maria</p>
           <img src="assets/img/homePage/baseline-keyboard_arrow_down-24px.svg">
@@ -23,20 +31,39 @@
       <div fxFlex="138px"></div>
     </div>
     <div class="body-content" fxFlex>
-        <div class="flight-container"></div>
-        <div fxLayout="rows">
-            <div class="airport-container-left"></div>
-            <div class="airport-container-right"></div>
+      <div class="flex-container" fxLayout="column" fxLayoutAlign=" center">
+        <mat-card fxFlex="312px" class="flight-container">
+          <div class="flex-container" fxLayout="rows wrap" fxLayoutAlign="space-between center" style="width:100%;height:48px;background-color:rgba(229, 229, 229, 1); ">
+            <mat-tab-group>
+              <mat-tab label="FLIGHTS"></mat-tab>
+              <mat-tab label="DEPARTMENTS"></mat-tab>
+            </mat-tab-group>
+            <div>
+              <img src="assets/img/homePage/baseline-refresh-24px.svg">
+              <img style="margin-left: 10px" src="assets/img/homePage/outline-settings-24px.svg">
+            </div>
+          </div>
+        </mat-card>
+         <div fxFlex="312px" class="flight-container"></div> 
+        <div fxFlex>
+          <div class="flex-container" fxLayout="rows wrap" fxLayoutAlign="center none">
+            <mat-card fxFlex="580px" class="airport-container-left">
+              <div class="flex-container" fxLayout="rows wrap" fxLayoutAlign="space-between center" style="width:580px;height:48px;background-color:rgba(229, 229, 229, 1); ">
+                <p style="font-size:20px;font-family:Lato, Medium;margin-left: 15px">Airport Report</p>
+                <div>
+                  <img src="assets/img/homePage/baseline-refresh-24px.svg">
+                  <img style="margin-left: 10px" src="assets/img/homePage/outline-settings-24px.svg">
+                </div>
+              </div>
+              <canvas baseChart style="width:540px;height:240px" [datasets]="lineChartData" [labels]="lineChartLabels"
+                [options]="lineChartOptions" [colors]="lineChartColors" [chartType]="lineChartType" [plugins]="lineChartPlugins">
+              </canvas>
+            </mat-card>
+            <mat-card fxFlex="410px" class="airport-container-right">
+              <p style="font-size:20px;font-family:Lato, Medium;margin-left: 15px">Airport Report</p>
+            </mat-card>
+          </div>
         </div>
-    </div>
-    <div class="footer" fxFlex="72px">
-      <div class="flex-container" fxLayout="rows" fxLayoutAlign="space-between center">
-        <div fxFlex="138px"> </div>
-        <div fxFlex fxLayout="rows" fxLayoutAlign="space-between center">
-          <p class="footer-text">Copyright 2019 © All Rights Reserved.</p>
-          <img src="assets/img/mphasis_logo.png">
-        </div>
-        <div fxFlex="138px"></div>
       </div>
     </div>
   </div>

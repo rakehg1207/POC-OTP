@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
+import { RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
 import { ToolbarComponent } from './toolbar/toolbar.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
@@ -11,12 +12,17 @@ import { LoginComponent } from './login/login.component';
 import { HttpClientModule } from '@angular/common/http'; 
 import { HttpModule } from '@angular/http';
 import { FormsModule } from '@angular/forms';
+import { FooterComponent } from './footer/footer.component';
+import { ChartsModule } from 'ng2-charts';
+
+
 @NgModule({
   declarations: [
     AppComponent,
     ToolbarComponent,
     HomePageComponent,
-    LoginComponent
+    LoginComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
@@ -24,7 +30,9 @@ import { FormsModule } from '@angular/forms';
     BrowserAnimationsModule,
     FlexLayoutModule,
     MatToolbarModule,
+    RouterModule,
     FormsModule,
+    MatTabsModule,
     MatCardModule,
     MatButtonModule,
     MatIconModule,
@@ -34,6 +42,7 @@ import { FormsModule } from '@angular/forms';
     MatCheckboxModule,
     MatTabsModule,
     MatSelectModule
+    ChartsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
