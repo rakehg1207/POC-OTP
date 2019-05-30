@@ -39,8 +39,8 @@
               <mat-tab label="DEPARTMENTS"></mat-tab>
             </mat-tab-group>
             <div>
-              <img src="assets/img/homePage/baseline-refresh-24px.svg">
-              <img style="margin-left: 10px" src="assets/img/homePage/outline-settings-24px.svg">
+                <i class="material-icons" style="font-size:18px;cursor: pointer;">refresh</i>
+                <i class="material-icons" style="font-size:18px;cursor: pointer;margin-left:9px;margin-right:25px">settings</i>
             </div>
           </div>
         </mat-card>
@@ -51,13 +51,14 @@
               <div class="flex-container" fxLayout="rows wrap" fxLayoutAlign="space-between center" style="width:580px;height:48px;background-color:rgba(229, 229, 229, 1); ">
                 <p style="font-size:20px;font-family:Lato, Medium;margin-left: 15px">Airport Report</p>
                 <div>
-                  <img src="assets/img/homePage/baseline-refresh-24px.svg">
-                  <img style="margin-left: 10px" src="assets/img/homePage/outline-settings-24px.svg">
+                  <i class="material-icons" style="font-size:18px;cursor: pointer;">refresh</i>
+                  <i class="material-icons" style="font-size:18px;cursor: pointer;margin-left:9px;margin-right:25px">settings</i>
                 </div>
               </div>
-              <canvas baseChart style="width:540px;height:240px" [datasets]="lineChartData" [labels]="lineChartLabels"
-                [options]="lineChartOptions" [colors]="lineChartColors" [chartType]="lineChartType" [plugins]="lineChartPlugins">
-              </canvas>
+              <div id="chart-container">
+                <canvas #myCanvas id="canvas" height="130px" baseChart [chartType]="chartType" [datasets]="chartData"
+                  [labels]="chartLabels" [colors]="chartColors" [options]="chartOptions"></canvas>
+              </div>
             </mat-card>
             <mat-card fxFlex="410px" class="airport-container-right">
               <p style="font-size:20px;font-family:Lato, Medium;margin-left: 15px">Airport Report</p>
