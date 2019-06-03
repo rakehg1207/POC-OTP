@@ -33,9 +33,9 @@
     /* padding: 0 20px; */
     height: 100%;
   }
-  mat-ink-bar{
+  /* mat-ink-bar{ */
     /* visibility: visible; left: 320px; width: 160px; */
-  }
+  /* } */
   .search{
     margin:20px 15px;border:1px solid black;border-radius: 20px;height:39px;width:250px;
   }
